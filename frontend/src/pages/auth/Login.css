@@ -1,0 +1,134 @@
+/* Container for the entire login page */
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Radiant gradient background */
+    background: linear-gradient(135deg, #6B73FF 0%, #000DFF 0%, #7c83fd 10%, #96e6a1 100%);
+    background: linear-gradient(110deg, #7380f2 0%, #8defc6 100%);
+}
+
+.login-card {
+    background-color: #050505;
+    /* Black/Very dark */
+    padding: 3rem 4rem;
+    border-radius: 4px;
+    /* Sharper corners as per design */
+    width: 100%;
+    max-width: 450px;
+    /* Adjusted to look like the image */
+    min-height: auto;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    /* Spacing */
+}
+
+.brand-header {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.brand-logo {
+    font-size: 2.5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.brand-logo svg {
+    width: 32px;
+    height: 32px;
+}
+
+.login-title {
+    font-size: 1rem;
+    color: #4ade80;
+    /* Green */
+    letter-spacing: 0.05em;
+    font-weight: 400;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.form-input {
+    background-color: #fff;
+    /* White background */
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    /* Small radius */
+    color: #000;
+    /* Black text */
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.2s;
+    width: 100%;
+}
+
+.form-input::placeholder {
+    color: #9ca3af;
+}
+
+.form-input:focus {
+    outline: 2px solid #4ade80;
+}
+
+.login-button {
+    background-color: #404040;
+    /* Dark grey button */
+    color: #fff;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    border: none;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #505050;
+}
+
+.login-footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.forgot-password {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.forgot-password svg {
+    width: 16px;
+    height: 16px;
+}

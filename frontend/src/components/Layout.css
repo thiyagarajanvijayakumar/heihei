@@ -1,0 +1,98 @@
+/* Copying styles from Dashboard.css to Layout.css due to refactoring */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f3f4f6;
+    font-family: 'Outfit', sans-serif;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    background-color: #fff;
+    border-right: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    transition: width 0.3s ease;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.nav-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    color: #4b5563;
+    text-decoration: none;
+    font-size: 1.1rem;
+    /* Increased from 0.95rem */
+    font-weight: 500;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    background-color: #f0fdf4;
+    color: #16a34a;
+}
+
+.nav-item svg {
+    font-size: 1.25rem;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.top-bar {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-title h2 {
+    font-size: 1.75rem;
+    /* Increased from 1.5rem */
+    color: #111827;
+    font-weight: 600;
+}
+
+.top-bar-title p {
+    color: #6b7280;
+    font-size: 1rem;
+    /* Increased from 0.875rem */
+    margin-top: 0.25rem;
+}
+
+.content-area {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
